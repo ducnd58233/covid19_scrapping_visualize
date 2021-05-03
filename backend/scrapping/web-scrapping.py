@@ -1,3 +1,4 @@
+import sys
 import requests
 import pandas as pd
 import numpy as np
@@ -44,6 +45,7 @@ def insert_to_database():
         mycol.drop()
         
     mycol.insert_many(data_list)
+    
 
 if __name__ == "__main__":
     insert_to_database()
